@@ -9,8 +9,8 @@ Group:		Development/Languages
 Source0:	http://rikkus.info/arch/%{name}-%{version}.tar.gz
 # Source0-md5:	1772ca1c368c527b8809803fb4996b3e
 URL:		http://rikkus.info/ruby_vorbisfile.html
-BuildRequires:	ruby
 BuildRequires:	libvorbis-devel
+BuildRequires:	ruby
 Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,7 +24,7 @@ Modu³ OGG Vorbis dla Ruby.
 %setup -q 
 
 %build
-./configure
+%{__configure}
 %{__make}
 
 %install
