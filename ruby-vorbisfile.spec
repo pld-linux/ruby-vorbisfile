@@ -1,6 +1,6 @@
 %define	ruby_sitearchdir	%(ruby -r rbconfig -e 'print Config::CONFIG["sitearchdir"]')
-Summary:	OGG Vorbis module for Ruby
-Summary(pl):	Modu³ OGG Vorbis dla Ruby
+Summary:	Ogg Vorbis module for Ruby
+Summary(pl):	Modu³ Ogg Vorbis dla Ruby
 Name:		ruby-vorbisfile
 Version:	0.2
 Release:	1
@@ -15,10 +15,10 @@ Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-OGG Vorbis module for Ruby.
+Ogg Vorbis module for Ruby.
 
 %description -l pl
-Modu³ OGG Vorbis dla Ruby.
+Modu³ Ogg Vorbis dla Ruby.
 
 %prep
 %setup -q 
