@@ -24,8 +24,11 @@ Modu³ OGG Vorbis dla Ruby.
 %setup -q 
 
 %build
-%{__configure}
-%{__make}
+# not autoconf-generated
+./configure
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -fPIC"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -39,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog
-%{ruby_sitearchdir}/*
+%attr(755,root,root) %{ruby_sitearchdir}/*.so
