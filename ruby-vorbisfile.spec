@@ -1,4 +1,3 @@
-%define	ruby_sitearchdir	%(ruby -r rbconfig -e 'print Config::CONFIG["sitearchdir"]')
 Summary:	Ogg Vorbis module for Ruby
 Summary(pl):	Modu³ Ogg Vorbis dla Ruby
 Name:		ruby-vorbisfile
@@ -10,6 +9,7 @@ Source0:	http://rikkus.info/arch/%{name}-%{version}.tar.gz
 # Source0-md5:	1772ca1c368c527b8809803fb4996b3e
 URL:		http://rikkus.info/ruby_vorbisfile.html
 BuildRequires:	libvorbis-devel
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,7 +21,7 @@ Ogg Vorbis module for Ruby.
 Modu³ Ogg Vorbis dla Ruby.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 # not autoconf-generated
