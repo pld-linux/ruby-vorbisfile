@@ -2,7 +2,7 @@ Summary:	Ogg Vorbis module for Ruby
 Summary(pl):	Modu³ Ogg Vorbis dla Ruby
 Name:		ruby-vorbisfile
 Version:	0.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://rikkus.info/arch/%{name}-%{version}.tar.gz
@@ -10,8 +10,8 @@ Source0:	http://rikkus.info/arch/%{name}-%{version}.tar.gz
 URL:		http://rikkus.info/ruby_vorbisfile.html
 BuildRequires:	libvorbis-devel
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby
-Requires:	ruby
+BuildRequires:	ruby-modules
+Requires:	ruby-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
