@@ -9,9 +9,9 @@ Source0:	http://rikkus.info/arch/%{name}-%{version}.tar.gz
 # Source0-md5:	1772ca1c368c527b8809803fb4996b3e
 URL:		http://rikkus.info/ruby_vorbisfile.html
 BuildRequires:	libvorbis-devel
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
