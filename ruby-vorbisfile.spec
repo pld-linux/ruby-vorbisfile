@@ -1,5 +1,5 @@
 Summary:	Ogg Vorbis module for Ruby
-Summary(pl):	Modu≥ Ogg Vorbis dla Ruby
+Summary(pl.UTF-8):   Modu≈Ç Ogg Vorbis dla Ruby
 Name:		ruby-vorbisfile
 Version:	0.2
 Release:	2
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Ogg Vorbis module for Ruby.
 
-%description -l pl
-Modu≥ Ogg Vorbis dla Ruby.
+%description -l pl.UTF-8
+Modu≈Ç Ogg Vorbis dla Ruby.
 
 %prep
 %setup -q
