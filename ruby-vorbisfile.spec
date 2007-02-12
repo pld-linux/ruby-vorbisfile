@@ -1,5 +1,5 @@
 Summary:	Ogg Vorbis module for Ruby
-Summary(pl.UTF-8):   Moduł Ogg Vorbis dla Ruby
+Summary(pl.UTF-8):	Moduł Ogg Vorbis dla Ruby
 Name:		ruby-vorbisfile
 Version:	0.2
 Release:	2
